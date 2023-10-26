@@ -12,7 +12,6 @@ export default function NavBar(){
         <ul className="navbar-nav">
             <CustomLink to="/">Home</CustomLink>
             <CustomLink to="/menu">Menu</CustomLink>
-            <CustomLink to="/about">About</CustomLink>
         </ul>
         <span/>
     </nav>

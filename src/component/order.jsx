@@ -16,16 +16,13 @@ export default function Order({ dataItem }) {
 
   function handleAddProduct(id, e) {
     setCartItem(cartItems.map((items) => {
-      if (items.id === id) {
-        if (items.quantity < 1) {
-          document.getElementById(items.idname).focus()
-          return { ...items, quantity: 1 }
-        } else {
+      if (items.id === id) { {
           return { ...items, quantity: e.target.value }
         }
       } else { return items }
     }))
   }
+
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -50,9 +47,12 @@ export default function Order({ dataItem }) {
             <img src={items.img} />
             <div>
               <h1>{items.name}</h1>
-              <div className="btn_order"> 
-                <input min="0" type="number" value={items.quantity} onChange={(e) => { handleAddProduct(items.id, e) }} id={items.idname} />
-                <button className={items.quantity != 0 ? "btn_hide" : "order_card_button"} onClick={() => { handleAddProduct(items.id) }}>Tambahkan</button>
+              <div className="btn_order">
+                <input min="0" type="number" 
+                value={items.quantity} 
+                onChange={(e) => { handleAddProduct(items.id, e) }} 
+                id={items.idname} 
+                className={items.quantity > 0 ? "hijau" : ""}/>
               </div>
             </div>
           </li>
