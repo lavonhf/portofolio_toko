@@ -40,7 +40,7 @@ export default function Order({ dataItem }) {
   return <>
     <div className="order-container">
       <div className="order_title">pilihan menu</div>
-      <img className="bg_img" src="src/component/image/michael-oeser-V5nGhxuovig-unsplash.jpg" />
+      <img className="bg_img" src="public/image/michael-oeser-V5nGhxuovig-unsplash.jpg" />
       <div className="order-cart">
         {cartItems.map((items) =>
           <li className="order_card" key={items.id}>

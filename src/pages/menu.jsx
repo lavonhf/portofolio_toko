@@ -4,9 +4,9 @@ export default function Menu({dataItem}) {
       <div className="menu-container">
         <img
           className="menu-bg"
-          src="src/component/image/michael-oeser-V5nGhxuovig-unsplash.jpg"
+          src="public/image/michael-oeser-V5nGhxuovig-unsplash.jpg"
         />
-        <h1>Menu ~ List</h1>
+        <h1>Menu</h1>
         <span></span>
         <div className="menu-sec">
           <div className="card-list">

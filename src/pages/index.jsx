@@ -8,7 +8,7 @@ export default function Home() {
       <section className="home-page">
         <img
           className="home-bg"
-          src="src/component/image/michael-oeser-V5nGhxuovig-unsplash.jpg"
+          src="public/image/michael-oeser-V5nGhxuovig-unsplash.jpg"
         />
         <h1 className="home-title">
           Soto Ayam <br />
